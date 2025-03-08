@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+.navbar {
+    padding: 10px 0;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12 !important;
+}
+
+/* Search Box */
+.navbar form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .form-control {
+    width: 180px;
+    border-radius: 5px;
+}
+
+.navbar .btn-outline-light {
+    border-radius: 5px;
+}
+
+/* Cart Icon */
+.navbar .bi-cart3 {
+    font-size: 20px;
+}
+
+.navbar .badge {
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+/* My Account Dropdown */
+.navbar .bi-person-circle {
+    font-size: 18px;
+}
+
+
+
+/* Hero Section Styling */
+.hero {
+    background: url('images/bg-photo.jfif') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    background: #d35400;
+    border: none;
+}
+
+.hero .btn:hover {
+    background: #a04000;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.about-us h2 {
+    color: #d35400;
+    font-weight: bold;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.about-us ul li::before {
+    content: "✔";
+    color: #d35400;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.categories h2 {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.category-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category-card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Products Section */
+.products {
+    padding: 60px 0;
+}
+
+.products h2 {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d35400;
+}
+
+.product-card .btn {
+    background: #d35400;
+    border: none;
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Recipes Section */
+.recipes {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.recipes h2 {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.recipe-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.recipe-card .btn {
+    background: #d35400;
+    border: none;
+    border-radius: 5px;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Blog Section */
+.blog {
+    padding: 60px 0;
+}
+
+.blog h2 {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.blog-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.blog-card .btn {
+    background: #d35400;
+    border: none;
+    border-radius: 5px;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.contact h2 {
+    color: #d35400;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form .btn {
+    background: #d35400;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.contact-form .btn:hover {
+    background: #b84300;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h4 {
+    font-size: 1.3rem;
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Google Maps Placeholder */
+.map-placeholder {
+    margin-top: 20px;
+}
+
+.map-placeholder img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    gap: 5px;
+}
+
+.search-box .form-control {
+    border-radius: 5px;
+}
+
+.btn-search {
+    background: #d35400;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-search:hover {
+    background: #b84300;
+}
+
+/* Quick Links */
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #d35400;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    opacity: 0.7;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+/* Copyright */
+.footer-bottom {
+    margin-top: 20px;
+}

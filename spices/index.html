@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spice Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" id="navbar">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#hero">🌶 Nature's Spice</a>
+
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Home</a> <!-- Updated ID to match About Us section -->
+                </li>
+
+                <!-- Categories Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#categories" id="categoriesDropdown" role="button"
+                        data-bs-toggle="dropdown">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#spices">Spices</a></li>
+                        <li><a class="dropdown-item" href="#blends">Blends</a></li>
+                        <li><a class="dropdown-item" href="#herbs">Herbs</a></li>
+                        <li><a class="dropdown-item" href="#organic">Organic</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#shop">Shop</a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Right Side Functional Items -->
+            <ul class="navbar-nav align-items-center">
+                <!-- Search Bar -->
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </li>
+
+                <!-- Cart Icon -->
+                <li class="nav-item ms-3">
+                    <a href="#" class="nav-link position-relative">
+                        <i class="bi bi-cart3 text-light" style="font-size: 20px;"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                        </span>
+                    </a>
+                </li>
+
+                <!-- My Account Dropdown -->
+                <li class="nav-item dropdown ms-3">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="accountDropdown" role="button"
+                        data-bs-toggle="dropdown">
+                        <i class="bi bi-person-circle"></i> My Account
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        <li><a class="dropdown-item" href="#">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container text-center">
+            <h1>Explore the World of Exquisite Spices</h1>
+            <p>Discover premium spices, blends, and organic herbs for your kitchen.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-md-6">
+                    <img src="images/img1.jpg" alt="Spices" class="img-fluid rounded">
+                </div>
+                <!-- Text Section -->
+                <div class="col-md-6">
+                    <h2>About Our Spices</h2>
+                    <p>We bring you the finest, hand-picked spices from around the world, ensuring quality and
+                        authenticity in every blend.</p>
+                    <h4>Why Choose Us?</h4>
+                    <ul>
+                        <li>100% Organic and Natural Spices</li>
+                        <li>Sourced from Authentic Farms</li>
+                        <li>Rich Aroma and High Quality</li>
+                        <li>Fast and Reliable Shipping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container text-center">
+            <h2>Shop by Category</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="images/organic.webp" alt="Spices">
+                        <h4>Spices</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="images/blends.jpeg" alt="Blends">
+                        <h4>Blends</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="images/herbs.jpg" alt="Herbs">
+                        <h4>Herbs</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card">
+                        <img src="images/img3.jpg" alt="Organic">
+                        <h4>Organic</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="shop" class="products">
+        <div class="container text-center">
+            <h2>Our Best Spices</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="images/turmeric-powder.webp" alt="Turmeric">
+                        <h4>Organic Turmeric</h4>
+                        <p>$8.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="images/Paprika.jpeg" alt="Paprika">
+                        <h4>Smoked Paprika</h4>
+                        <p>$6.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="images/Cinnamon.webp" alt="Cinnamon">
+                        <h4>Ceylon Cinnamon</h4>
+                        <p>$7.49</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes">
+        <div class="container text-center">
+            <h2>Featured Recipes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img src="images/S-3.jpeg" alt="Curry Dish">
+                        <h4>Authentic Indian Curry</h4>
+                        <p>A delicious and aromatic dish made with our finest spices.</p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img src="images/S-1.jpeg" alt="Spiced Tea">
+                        <h4>Masala Spiced Tea</h4>
+                        <p>A warm and soothing tea infused with cinnamon, cloves, and cardamom.</p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="recipe-card">
+                        <img src="images/S-2.jpeg" alt="Grilled Chicken">
+                        <h4>Spicy Grilled Chicken</h4>
+                        <p>Perfectly grilled chicken seasoned with smoky paprika and herbs.</p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container text-center">
+            <h2>Latest Blog Posts</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog-3.jpeg" alt="Health Benefits">
+                        <h4>Health Benefits of Spices</h4>
+                        <p>Learn how different spices can boost your health and well-being.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog-4.jpeg" alt="Cooking Tips">
+                        <h4>Top 5 Cooking Tips with Spices</h4>
+                        <p>Enhance your cooking skills with these expert spice tips.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog-7.jpeg" alt="Exotic Spices">
+                        <h4>Exploring Exotic Spices</h4>
+                        <p>Discover rare and exotic spices from around the world.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out with any questions.</p>
+
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h4>Get in Touch</h4>
+                        <p><strong>Email:</strong> support@spicestore.com</p>
+                        <p><strong>Phone:</strong> +1 234 567 890</p>
+                        <p><strong>Address:</strong> 123 Spice Street, Flavor Town, USA</p>
+                    </div>
+
+                    <!-- Google Maps Placeholder -->
+                    <div class="map-placeholder">
+                        <img src="map-placeholder.jpg" alt="Google Maps Location">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Search Box -->
+                <div class="col-md-4">
+                    <h5>Search</h5>
+                    <form class="search-box">
+                        <input type="text" class="form-control" placeholder="Search for spices...">
+                        <button type="submit" class="btn btn-search">Search</button>
+                    </form>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom text-center mt-3">
+                <p>&copy; 2025 Spice Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
